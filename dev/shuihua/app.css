@@ -1,0 +1,83 @@
+html {
+    width: 100vw;
+    /* Old browsers */
+
+    height: 110vh;
+    /* FF3.6+ */
+
+    background: #bacbe1;
+    /* Chrome,Safari4+ */
+
+    background: -moz-linear-gradient(top, #bacbe1 0%, #98acce 31%, #90b3cc 31%, #98acce 31%, #96b7d7 32%, #6f7584 92%, #60474d 100%);
+    /* Chrome10+,Safari5.1+ */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bacbe1), color-stop(31%, #98acce), color-stop(31%, #90b3cc), color-stop(31%, #98acce), color-stop(32%, #96b7d7), color-stop(92%, #6f7584), color-stop(100%, #60474d));
+    /* Opera 11.10+ */
+
+    background: -webkit-linear-gradient(top, #bacbe1 0%, #98acce 31%, #90b3cc 31%, #98acce 31%, #96b7d7 32%, #6f7584 92%, #60474d 100%);
+    /* IE10+ */
+
+    background: -o-linear-gradient(top, #bacbe1 0%, #98acce 31%, #90b3cc 31%, #98acce 31%, #96b7d7 32%, #6f7584 92%, #60474d 100%);
+    /* W3C */
+
+    background: -ms-linear-gradient(top, #bacbe1 0%, #98acce 31%, #90b3cc 31%, #98acce 31%, #96b7d7 32%, #6f7584 92%, #60474d 100%);
+    /* IE6-9 */
+
+    background: linear-gradient(to bottom, #bacbe1 0%, #98acce 31%, #90b3cc 31%, #98acce 31%, #96b7d7 32%, #6f7584 92%, #60474d 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#bacbe1', endColorstr='#60474d', GradientType=0);
+}
+.container {
+    background: url("img/splash_bk2.png") no-repeat center bottom;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0px;
+    background-size: 100% 300px;
+    opacity: 0.85;
+}
+.splash {
+    background: url(img/splash-sprite2.svg);
+    width: 300px;
+    height: 145px;
+    opacity: 0.8;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 40%;
+    /* fallback */
+
+    -webkit-animation: splashit 1.8s steps(21) infinite;
+}
+.no-svg .splash {
+    background: url(img/splash-sprite2.png);
+}
+@-webkit-keyframes splashit {
+    100% {
+        background-position: 0 -3046px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        /*background: none !important;*/
+    }
+}
+
+/**fish**/
+body {
+    overflow: hidden;
+}
+.container_fish {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    height: 240px;
+    width: 500px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#fishbitmap {
+    display: none;
+}
+#fishtank {position: absolute;bottom: 0px;left: 0px;}
