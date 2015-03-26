@@ -1,4 +1,4 @@
-/* CSS Document */
+/* CSS Document 关注微信订阅号获取更多知识：web-bear */
 
 @charset "utf-8";
 body,
@@ -794,3 +794,16 @@ body {
     box-shadow: 100px 0 0 #fff;
     background: #fff;
 }
+@media screen and (min-width: 1025px) {
+    .qr_code_pc {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        padding: 16px;
+        border: 1px solid #d9dadc;
+        background-color: #fff;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+.qr_code_pc_img {width: 100px;height: 100px;}
